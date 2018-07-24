@@ -11,8 +11,8 @@ declare(strict_types=1);
 namespace CVTrust\EdiEngine\EdiStandards\X12_005010\DataElements;
 
 
-use CVTrust\EdiEngine\Common\Definitions\MapSimpleDataElement;
-use CVTrust\EdiEngine\Common\Enums\DataType;
+use CVTrust\EdiEngine\EdiEngine\Common\Definitions\MapSimpleDataElement;
+use CVTrust\EdiEngine\EdiEngine\Common\Enums\DataType;
 
 class E_1251 extends MapSimpleDataElement
 {

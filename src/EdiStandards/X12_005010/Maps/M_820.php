@@ -11,8 +11,8 @@ declare(strict_types=1);
 namespace CVTrust\EdiEngine\EdiStandards\X12_005010\Maps;
 
 
-use CVTrust\EdiEngine\Common\Definitions\MapLoop;
-use CVTrust\EdiEngine\Common\Enums\RequirementDesignator;
+use CVTrust\EdiEngine\EdiEngine\Common\Definitions\MapLoop;
+use CVTrust\EdiEngine\EdiEngine\Common\Enums\RequirementDesignator;
 use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\BPR;
 use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\DTM;
 use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\ENT;
