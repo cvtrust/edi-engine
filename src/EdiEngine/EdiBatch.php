@@ -8,7 +8,7 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine;
+namespace CVTrust\EdiEngine\EdiEngine;
 
 
 use CVTrust\EdiEngine\EdiEngine\Runtime\EdiInterchange;
