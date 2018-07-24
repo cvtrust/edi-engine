@@ -1,0 +1,40 @@
+{
+  "name": "cvtrust/EdiEngine",
+  "description": "Port of olmelabs/EdiEngine to PHP 7.2+",
+  "type": "library",
+  "license": "MIT License",
+  "authors": [
+    {
+      "name": "Chad Woskoski",
+      "email": "chadw@cvtrust.org"
+    }
+  ],
+  "keywords": [
+    "Edi",
+    "X12",
+    "Hipaa",
+    "Segment",
+    "Loop"
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5",
+    "malukenho/docheader": "^0.1.4",
+    "satooshi/php-coveralls": "^1.0"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "CVTrust\\EdiEngine\\" : "src/"
+    }
+  },
+  "autoload-dev" : {
+    "psr-4" : {
+      "CVTrustTest\\EdiEngine\\": "tests/"
+    }
+  }
+}
