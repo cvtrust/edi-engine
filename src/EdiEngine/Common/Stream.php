@@ -8,11 +8,10 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiEngine\Common;
+namespace CVTrust\EdiEngine\Common;
 
 
 use InvalidArgumentException;
-use Psr\Http\Message\StreamInterface;
 
 class Stream implements StreamInterface
 {

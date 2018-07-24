@@ -8,11 +8,11 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiEngine\Common\Definitions;
+namespace CVTrust\EdiEngine\Common\Definitions;
 
 
-use CVTrust\Edi\EdiEngine\Common\Enums\DataType;
-use CVTrust\Edi\EdiEngine\Common\Enums\RequirementDesignator;
+use CVTrust\EdiEngine\Common\Enums\DataType;
+use CVTrust\EdiEngine\Common\Enums\RequirementDesignator;
 
 abstract class MapSimpleDataElement extends MapBaseDataElement
 {

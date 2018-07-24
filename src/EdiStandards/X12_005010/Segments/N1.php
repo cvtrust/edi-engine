@@ -11,8 +11,8 @@ declare(strict_types=1);
 namespace CVTrust\Edi\EdiStandards\X12_005010\Segments;
 
 
-use CVTrust\Edi\EdiEngine\Common\Enums\RequirementDesignator;
-use CVTrust\Edi\EdiEngine\Common\MapSegment;
+use CVTrust\EdiEngine\Common\Enums\RequirementDesignator;
+use CVTrust\EdiEngine\Common\MapSegment;
 use CVTrust\Edi\EdiStandards\X12_005010\DataElements as DE;
 
 class N1 extends MapSegment

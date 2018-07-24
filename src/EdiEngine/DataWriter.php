@@ -8,10 +8,11 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiEngine;
+namespace CVTrust\EdiEngine;
 
 
-use Psr\Http\Message\StreamInterface;
+
+use CVTrust\EdiEngine\Common\StreamInterface;
 
 abstract class DataWriter
 {

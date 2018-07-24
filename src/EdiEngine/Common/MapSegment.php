@@ -8,7 +8,7 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiEngine\Common;
+namespace CVTrust\EdiEngine\Common;
 
 
 abstract class MapSegment extends MapBaseEntity

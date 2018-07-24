@@ -11,8 +11,8 @@ declare(strict_types=1);
 namespace CVTrust\Edi\EdiStandards\X12_005010\DataElements\CompositeDataElements;
 
 
-use CVTrust\Edi\EdiEngine\Common\Definitions\MapCompositeDataElement;
-use CVTrust\Edi\EdiEngine\Common\Enums\RequirementDesignator;
+use CVTrust\EdiEngine\Common\Definitions\MapCompositeDataElement;
+use CVTrust\EdiEngine\Common\Enums\RequirementDesignator;
 use CVTrust\Edi\EdiStandards\X12_005010\DataElements AS DE;
 
 class C040 extends MapCompositeDataElement

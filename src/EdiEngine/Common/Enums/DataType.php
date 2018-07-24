@@ -8,14 +8,14 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiEngine\Common\Enums;
+namespace CVTrust\EdiEngine\Common\Enums;
 
 
 use MabeEnum\Enum;
 
 /**
  * Class DataType
- * @package CVTrust\Edi\EdiEngine\Common\Enums
+ * @package CVTrust\EdiEngine\Common\Enums
  *
  * @method static DataType AN
  * @method static DataType DT

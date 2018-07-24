@@ -8,10 +8,10 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiEngine;
+namespace CVTrust\EdiEngine;
 
 
-use CVTrust\Edi\EdiEngine\Runtime\EdiInterchange;
+use CVTrust\EdiEngine\Runtime\EdiInterchange;
 
 class EdiBatch
 {
