@@ -8,10 +8,10 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine\Common;
+namespace CVTrust\EdiEngine\EdiEngine\Common;
 
 
-use CVTrust\EdiEngine\Common\Enums\RequirementDesignator;
+use CVTrust\EdiEngine\EdiEngine\Common\Enums\RequirementDesignator;
 
 abstract class MapBaseEntity
 {

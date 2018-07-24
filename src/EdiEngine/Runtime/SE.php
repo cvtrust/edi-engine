@@ -8,10 +8,10 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine\Runtime;
+namespace CVTrust\EdiEngine\EdiEngine\Runtime;
 
 
-use CVTrust\EdiEngine\Common\MapSegment;
+use CVTrust\EdiEngine\EdiEngine\Common\MapSegment;
 
 class SE extends EdiSegment
 {

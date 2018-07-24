@@ -8,10 +8,10 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine\Common\Definitions;
+namespace CVTrust\EdiEngine\EdiEngine\Common\Definitions;
 
 
-use CVTrust\EdiEngine\Common\MapBaseEntity;
+use CVTrust\EdiEngine\EdiEngine\Common\MapBaseEntity;
 
 class MapLoop extends MapBaseEntity
 {

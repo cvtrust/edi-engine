@@ -8,7 +8,7 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiStandards\X12_005010\DataElements;
+namespace CVTrust\EdiEngine\EdiStandards\X12_005010\DataElements;
 
 
 use CVTrust\EdiEngine\Common\Definitions\MapSimpleDataElement;

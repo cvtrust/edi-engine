@@ -1,6 +1,6 @@
 <?php
 
-namespace CVTrust\EdiEngine\Common;
+namespace CVTrust\EdiEngine\EdiEngine\Common;
 
 /**
  * Describes a data stream.

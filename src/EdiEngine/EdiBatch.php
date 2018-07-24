@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace CVTrust\EdiEngine;
 
 
-use CVTrust\EdiEngine\Runtime\EdiInterchange;
+use CVTrust\EdiEngine\EdiEngine\Runtime\EdiInterchange;
 
 class EdiBatch
 {

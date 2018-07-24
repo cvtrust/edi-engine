@@ -8,10 +8,10 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine\Runtime;
+namespace CVTrust\EdiEngine\EdiEngine\Runtime;
 
 
-use CVTrust\EdiEngine\Common\MapBaseEntity;
+use CVTrust\EdiEngine\EdiEngine\Common\MapBaseEntity;
 use Solarium\Component\EdisMax;
 
 class EdiTrans extends EdiLoop

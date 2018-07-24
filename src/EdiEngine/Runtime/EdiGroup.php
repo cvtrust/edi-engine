@@ -8,7 +8,7 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine\Runtime;
+namespace CVTrust\EdiEngine\EdiEngine\Runtime;
 
 
 class EdiGroup

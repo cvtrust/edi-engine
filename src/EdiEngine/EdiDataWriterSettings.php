@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace CVTrust\EdiEngine;
 
 
-use CVTrust\EdiEngine\Common\MapSegment;
+use CVTrust\EdiEngine\EdiEngine\Common\MapSegment;
 
 class EdiDataWriterSettings
 {

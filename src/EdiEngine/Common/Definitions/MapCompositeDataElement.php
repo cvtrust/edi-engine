@@ -8,10 +8,10 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine\Common\Definitions;
+namespace CVTrust\EdiEngine\EdiEngine\Common\Definitions;
 
 
-use CVTrust\EdiEngine\Common\Enums\RequirementDesignator;
+use CVTrust\EdiEngine\EdiEngine\Common\Enums\RequirementDesignator;
 
 class MapCompositeDataElement extends MapBaseDataElement
 {

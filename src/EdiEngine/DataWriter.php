@@ -12,7 +12,7 @@ namespace CVTrust\EdiEngine;
 
 
 
-use CVTrust\EdiEngine\Common\StreamInterface;
+use CVTrust\EdiEngine\EdiEngine\Common\StreamInterface;
 
 abstract class DataWriter
 {

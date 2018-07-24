@@ -8,19 +8,19 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiStandards\X12_005010\Maps;
+namespace CVTrust\EdiEngine\EdiStandards\X12_005010\Maps;
 
 
 use CVTrust\EdiEngine\Common\Definitions\MapLoop;
 use CVTrust\EdiEngine\Common\Enums\RequirementDesignator;
-use CVTrust\Edi\EdiStandards\X12_005010\Segments\BPR;
-use CVTrust\Edi\EdiStandards\X12_005010\Segments\DTM;
-use CVTrust\Edi\EdiStandards\X12_005010\Segments\ENT;
-use CVTrust\Edi\EdiStandards\X12_005010\Segments\N1;
-use CVTrust\Edi\EdiStandards\X12_005010\Segments\NM1;
-use CVTrust\Edi\EdiStandards\X12_005010\Segments\REF;
-use CVTrust\Edi\EdiStandards\X12_005010\Segments\RMR;
-use CVTrust\Edi\EdiStandards\X12_005010\Segments\TRN;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\BPR;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\DTM;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\ENT;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\N1;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\NM1;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\REF;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\RMR;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\Segments\TRN;
 
 class M_820 extends MapLoop
 {

@@ -8,10 +8,10 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine\Runtime;
+namespace CVTrust\EdiEngine\EdiEngine\Runtime;
 
 
-use CVTrust\EdiEngine\Common\Definitions\MapBaseDataElement;
+use CVTrust\EdiEngine\EdiEngine\Common\Definitions\MapBaseDataElement;
 
 class EdiSimpleDataElement extends DataElementBase
 {

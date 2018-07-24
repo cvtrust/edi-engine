@@ -8,12 +8,12 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\Edi\EdiStandards\X12_005010\Segments;
+namespace CVTrust\EdiEngine\EdiStandards\X12_005010\Segments;
 
 
 use CVTrust\EdiEngine\Common\Enums\RequirementDesignator;
 use CVTrust\EdiEngine\Common\MapSegment;
-use CVTrust\Edi\EdiStandards\X12_005010\DataElements as DE;
+use CVTrust\EdiEngine\EdiStandards\X12_005010\DataElements as DE;
 
 class GE extends MapSegment
 {

@@ -6,7 +6,7 @@
  * Time: 11:14 AM
  */
 
-namespace CVTrust\EdiEngine\Runtime;
+namespace CVTrust\EdiEngine\EdiEngine\Runtime;
 
 
 trait CreateSegmentFromElementsTrait

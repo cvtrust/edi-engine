@@ -11,20 +11,20 @@ declare(strict_types=1);
 namespace CVTrust\EdiEngine;
 
 
-use CVTrust\EdiEngine\Common\MemoryStream;
-use CVTrust\EdiEngine\Common\StreamInterface;
-use CVTrust\EdiEngine\Runtime\DataElementBase;
-use CVTrust\EdiEngine\Runtime\EdiBaseEntity;
-use CVTrust\EdiEngine\Runtime\EdiGroup;
-use CVTrust\EdiEngine\Runtime\EdiLoop;
-use CVTrust\EdiEngine\Runtime\EdiSegment;
-use CVTrust\EdiEngine\Runtime\EdiTrans;
-use CVTrust\EdiEngine\Runtime\GE;
-use CVTrust\EdiEngine\Runtime\GS;
-use CVTrust\EdiEngine\Runtime\IEA;
-use CVTrust\EdiEngine\Runtime\ISA;
-use CVTrust\EdiEngine\Runtime\SE;
-use CVTrust\EdiEngine\Runtime\ST;
+use CVTrust\EdiEngine\EdiEngine\Common\MemoryStream;
+use CVTrust\EdiEngine\EdiEngine\Common\StreamInterface;
+use CVTrust\EdiEngine\EdiEngine\Runtime\DataElementBase;
+use CVTrust\EdiEngine\EdiEngine\Runtime\EdiBaseEntity;
+use CVTrust\EdiEngine\EdiEngine\Runtime\EdiGroup;
+use CVTrust\EdiEngine\EdiEngine\Runtime\EdiLoop;
+use CVTrust\EdiEngine\EdiEngine\Runtime\EdiSegment;
+use CVTrust\EdiEngine\EdiEngine\Runtime\EdiTrans;
+use CVTrust\EdiEngine\EdiEngine\Runtime\GE;
+use CVTrust\EdiEngine\EdiEngine\Runtime\GS;
+use CVTrust\EdiEngine\EdiEngine\Runtime\IEA;
+use CVTrust\EdiEngine\EdiEngine\Runtime\ISA;
+use CVTrust\EdiEngine\EdiEngine\Runtime\SE;
+use CVTrust\EdiEngine\EdiEngine\Runtime\ST;
 
 class EdiDataWriter extends DataWriter
 {

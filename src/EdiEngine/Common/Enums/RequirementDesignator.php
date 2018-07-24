@@ -8,14 +8,14 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\EdiEngine\Common\Enums;
+namespace CVTrust\EdiEngine\EdiEngine\Common\Enums;
 
 
 use MabeEnum\Enum;
 
 /**
  * Class RequirementDesignator
- * @package CVTrust\EdiEngine\Common\Enums
+ * @package CVTrust\EdiEngine\EdiEngine\Common\Enums
  *
  * @method static RequirementDesignator Mandatory
  * @method static RequirementDesignator Optional
