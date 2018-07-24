@@ -1,5 +1,5 @@
 {
-  "name": "cvtrust/EdiEngine",
+  "name": "cvtrust/edi-engine",
   "description": "Port of olmelabs/EdiEngine to PHP 7.2+",
   "type": "library",
   "license": "MIT License",
