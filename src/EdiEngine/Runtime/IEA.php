@@ -31,7 +31,7 @@ class IEA extends EdiSegment
         $content = $this->getContent();
 
         $content->append(new EdiSimpleDataElement($definition->getContent()[0], (string)$iea01IncludedGroupsCount));
-        $content->append(new EdiSimpleDataElement($definition->getContent()[1], (string)$iea02ControlNumber));
+        $content->append(new EdiSimpleDataElement($definition->getContent()[1], str_pad((string)$iea02ControlNumber, 9, '0', STR_PAD_LEFT)));
     }
 
 
