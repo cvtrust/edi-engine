@@ -78,6 +78,7 @@ class EdiDataWriter extends DataWriter
                 $this->_settings->getIsaSenderId(),
                 $this->_settings->getIsaReceiverQual(),
                 $this->_settings->getIsaReceiverId(),
+                $this->_settings->getIsaRepetitionSeparator(),
                 $this->_settings->getIsaEdiVersion(),
                 $icn,
                 $this->_settings->getIsaUsageIndicator(),
@@ -108,7 +109,8 @@ class EdiDataWriter extends DataWriter
                     $transaction->setSt(new ST(
                         $this->_settings->getStDef(),
                         $transaction->getDefinition()->getEdiName(),
-                        $currentTranIdx
+                        $currentTranIdx,
+                        $this->_settings->getGsEdiVersion()
                     ));
 
                     $this->writeEntity($transaction->getSt(), $stream);

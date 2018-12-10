@@ -113,6 +113,7 @@ class EdiDataWriterSettings
         string $gsSenderId,
         string $gsReceiverId,
         string $isaEdiVersion,
+        string $isaRepetitionSeparator,
         string $gsEdiVersion,
         string $isaUsageIndicator,
         int $isaFirstControlNumber,
@@ -134,6 +135,7 @@ class EdiDataWriterSettings
         $this->isaComponentSeparator = $isaComponentSeparator;
         $this->gsSenderId = $gsSenderId;
         $this->gsReceiverId = $gsReceiverId;
+        $this->isaRepetitionSeparator = $isaRepetitionSeparator;
         $this->isaEdiVersion = $isaEdiVersion;
         $this->gsEdiVersion = $gsEdiVersion;
         $this->isaUsageIndicator = $isaUsageIndicator;
@@ -239,6 +241,11 @@ class EdiDataWriterSettings
         return $this->gsReceiverId;
     }
 
+    public function getIsaRepetitionSeparator(): string
+    {
+        return $this->isaRepetitionSeparator;
+    }
+    
     /**
      * @return string
      */

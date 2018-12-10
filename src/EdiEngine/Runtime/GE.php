@@ -34,4 +34,6 @@ class GE extends EdiSegment
         $content->append(new EdiSimpleDataElement($definition->getContent()[0], (string)$ge01IncludedTransCount));
         $content->append(new EdiSimpleDataElement($definition->getContent()[1], (string)$ge02ControlNumber));
     }
+
+
 }

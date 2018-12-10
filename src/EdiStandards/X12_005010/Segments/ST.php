@@ -24,5 +24,6 @@ class ST extends MapSegment
 
         $content->append(DE\E_0143::createWithRequirementDesignator(RequirementDesignator::Mandatory()));
         $content->append(DE\E_0329::createWithRequirementDesignator(RequirementDesignator::Mandatory()));
+        $content->append(DE\E_0480::createWithRequirementDesignator(RequirementDesignator::Optional()));
     }
 }

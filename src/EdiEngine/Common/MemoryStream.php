@@ -17,9 +17,9 @@ class MemoryStream implements StreamInterface
     private $resource;
     private $size = 0;
 
-    public function __construct($body = "", $chunkSize = null)
+    public function __construct($body = "", $chunkSize = 4096)
     {
-        $this->size = strlen($body);
+        $this->size = $chunkSize;
         $this->resource = fopen('php://memory', 'rw+');
         if (null !== $chunkSize) {
             stream_set_read_buffer($this->resource, $chunkSize);

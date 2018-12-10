@@ -21,7 +21,8 @@ class ST extends EdiSegment
     public function __construct(
         ?MapSegment $definition,
         string $st01TransactionId,
-        int $st02ControlNumber
+        int $st02ControlNumber,
+        ?string $implementationConventionRef
     )
     {
         parent::__construct($definition);
@@ -35,5 +36,6 @@ class ST extends EdiSegment
 
         $content->append(new EdiSimpleDataElement($definition->getContent()[0], $st01TransactionId));
         $content->append(new EdiSimpleDataElement($definition->getContent()[1], $tcn));
+        $content->append(new EdiSimpleDataElement($definition->getContent()[2], $implementationConventionRef));
     }
 }

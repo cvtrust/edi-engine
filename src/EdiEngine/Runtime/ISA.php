@@ -23,6 +23,7 @@ class ISA extends EdiSegment
         ?string $isa06SenderId = null,
         ?string $isa07ReceiverQual = null,
         ?string $isa08ReceiverId = null,
+        ?string $isa11RepetitionSeparator = null,
         ?string $isa12VersionNumber = null,
         ?int $isa13ControlNumber = null,
         ?string $isa15UsageIndicator = null,
@@ -46,7 +47,7 @@ class ISA extends EdiSegment
         $this->content->append(new EdiSimpleDataElement($definition->getContent()[7], str_pad($isa08ReceiverId, 15, ' ', STR_PAD_RIGHT)));
         $this->content->append(new EdiSimpleDataElement($definition->getContent()[8], $dt->format('ymd')));
         $this->content->append(new EdiSimpleDataElement($definition->getContent()[9], $dt->format('Hi')));
-        $this->content->append(new EdiSimpleDataElement($definition->getContent()[10], 'U'));
+        $this->content->append(new EdiSimpleDataElement($definition->getContent()[10], $isa11RepetitionSeparator));
         $this->content->append(new EdiSimpleDataElement($definition->getContent()[11], $isa12VersionNumber));
         $this->content->append(new EdiSimpleDataElement($definition->getContent()[12], str_pad((string)$isa13ControlNumber, 9, '0', STR_PAD_LEFT)));
         $this->content->append(new EdiSimpleDataElement($definition->getContent()[13], '0'));
