@@ -91,15 +91,20 @@ class MemoryStream implements StreamInterface
         return true;
     }
 
-    public function read($length)
+    public function read($length): string
     {
         return fread($this->resource, $length);
     }
 
-    public function getContents()
+    public function getContents(): string
     {
         $this->rewind();
         return $this->read($this->size);
+    }
+
+    public function getResource()
+    {
+        return $this->resource;
     }
 
     public function getMetadata($key = null)
