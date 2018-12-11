@@ -98,6 +98,11 @@ class EdiDataWriterSettings
      */
     private $isaComponentSeparator;
 
+    /**
+     * @var string
+     */
+    private $isaRepetitionSeparator;
+
     public function __construct(
         MapSegment $isaDef,
         MapSegment $ieaDef,

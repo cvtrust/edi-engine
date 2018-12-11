@@ -15,11 +15,11 @@ class MemoryStream implements StreamInterface
 {
 
     private $resource;
-    private $size = 0;
+    private $chunkSize = 4096;
 
     public function __construct($body = "", $chunkSize = 4096)
     {
-        $this->size = $chunkSize;
+        $this->chunkSize = $chunkSize;
         $this->resource = fopen('php://memory', 'rw+');
         if (null !== $chunkSize) {
             stream_set_read_buffer($this->resource, $chunkSize);
@@ -99,7 +99,12 @@ class MemoryStream implements StreamInterface
     public function getContents(): string
     {
         $this->rewind();
-        return $this->read($this->size);
+        $contents = '';
+
+        while (! $this->eof()) {
+            $contents .= $this->read($this->chunkSize);
+        }
+        return $contents;
     }
 
     public function getResource()
