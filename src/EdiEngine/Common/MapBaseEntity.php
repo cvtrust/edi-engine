@@ -33,7 +33,8 @@ abstract class MapBaseEntity
     protected function __construct()
     {
         $this->content = new \ArrayObject([]);
-        $this->name = array_pop(explode('\\', get_class($this)));
+        $classParts = explode('\\', get_class($this));
+        $this->name = array_pop($classParts);
         $this->reqDes = RequirementDesignator::Optional();
     }
 

@@ -26,7 +26,8 @@ class EdiSimpleDataElement extends DataElementBase
 
         if (null !== $definition)
         {
-            $this->type = array_pop(explode('\\', get_class($this)));
+            $classParts = explode('\\', get_class($this));
+            $this->type = array_pop($classParts);
         }
 
         $this->val = $val;

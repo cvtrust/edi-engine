@@ -20,7 +20,8 @@ class MapCompositeDataElement extends MapBaseDataElement
 
     public function __construct()
     {
-        $this->name = array_pop(explode('\\', get_class($this)));
+        $classParts = explode('\\', get_class($this));
+        $this->name = array_pop($classParts);
         $this->reqDes = RequirementDesignator::Optional();
         $this->content = new \ArrayObject([]);
     }
