@@ -17,6 +17,9 @@ class MemoryStream implements StreamInterface
     private $resource;
     private $chunkSize = 4096;
 
+    /** @var int */
+    private $size;
+
     public function __construct($body = "", $chunkSize = 4096)
     {
         $this->chunkSize = $chunkSize;
@@ -25,7 +28,7 @@ class MemoryStream implements StreamInterface
             stream_set_read_buffer($this->resource, $chunkSize);
             stream_set_chunk_size($this->resource, $chunkSize);
         }
-        fwrite($this->resource, $body);
+        $this->size = (int) fwrite($this->resource, $body);
         fseek($this->resource, 0);
     }
 
@@ -83,7 +86,7 @@ class MemoryStream implements StreamInterface
 
     public function write($string)
     {
-        fwrite($this->resource, $string);
+        $this->size += (int) fwrite($this->resource, $string);
     }
 
     public function isReadable()
