@@ -27,7 +27,7 @@ class INS extends MapSegment
         $content->append(DE\E_0875::createWithRequirementDesignator(RequirementDesignator::Optional()));
         $content->append(DE\E_1203::createWithRequirementDesignator(RequirementDesignator::Optional()));
         $content->append(DE\E_1216::createWithRequirementDesignator(RequirementDesignator::Optional()));
-        $content->append(DE\E_1218::createWithRequirementDesignator(RequirementDesignator::Optional()));
+        $content->append(DE\CompositeDataElements\C052::createWithRequirementDesignator(RequirementDesignator::Optional()));
         $content->append(DE\E_1219::createWithRequirementDesignator(RequirementDesignator::Optional()));
         $content->append(DE\E_0584::createWithRequirementDesignator(RequirementDesignator::Optional()));
         $content->append(DE\E_1220::createWithRequirementDesignator(RequirementDesignator::Optional()));
