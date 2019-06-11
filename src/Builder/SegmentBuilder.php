@@ -8,7 +8,7 @@ use CVTrust\EdiEngine\EdiEngine\Common\Definitions\MapBaseDataElement;
 use CVTrust\EdiEngine\EdiEngine\Common\MapSegment;
 use CVTrust\EdiEngine\EdiEngine\Runtime\EdiSegment;
 use CVTrust\EdiEngine\EdiEngine\Runtime\EdiSimpleDataElement;
-use CVTrust\SutterHealthAetna\Eligibility\EdiDataElement\DataElement;
+namespace CVTrust\EdiEngine\EdiDataElement\DataElement;
 use Zend\Stdlib\ArrayObject;
 
 class SegmentBuilder

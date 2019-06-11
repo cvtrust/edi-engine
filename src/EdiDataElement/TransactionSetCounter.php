@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 namespace CVTrust\EdiEngine\EdiDataElement;
 
-use CVTrust\SutterHealthAetna\Eligibility\EdiDataElement\DataElement;
-use CVTrust\SutterHealthAetna\Eligibility\EdiSegment\DataElementReference;
+use CVTrust\EdiEngine\ConfigDefinition\Processor\DataElementReference;
 
 class TransactionSetCounter implements DataElement
 {
