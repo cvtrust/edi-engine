@@ -8,7 +8,6 @@ use CVTrust\EdiEngine\ConfigDefinition\Processor\DataElementReference;
 
 abstract class ValueDataElement implements DataElement
 {
-
     /**
      * @var string
      */
@@ -38,5 +37,4 @@ abstract class ValueDataElement implements DataElement
     {
         return $this->dataElementReference->DataElementReferencePosition();
     }
-
 }
