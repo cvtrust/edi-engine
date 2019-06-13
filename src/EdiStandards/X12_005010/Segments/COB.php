@@ -25,5 +25,6 @@ class COB extends MapSegment
         $content->append(DE\E_1138::createWithRequirementDesignator(RequirementDesignator::Optional()));
         $content->append(DE\E_0127::createWithRequirementDesignator(RequirementDesignator::Optional()));
         $content->append(DE\E_1143::createWithRequirementDesignator(RequirementDesignator::Optional()));
+        $content->append(DE\E_1365::createWithRequirementDesignator(RequirementDesignator::Optional()));
     }
 }
