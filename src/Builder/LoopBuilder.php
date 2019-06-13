@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace CVTrust\EdiEngine\Builder;
 
+use CVTrust\EdiEngine\EdiDataElement\DataElement\SegmentBuilder;
 use CVTrust\EdiEngine\EdiEngine\Common\Definitions\MapLoop;
 use CVTrust\EdiEngine\EdiEngine\Runtime\EdiLoop;
 

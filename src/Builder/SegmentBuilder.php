@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace CVTrust\EdiEngine\Builder;
 
+use CVTrust\EdiEngine\EdiDataElement\DataElement;
 use CVTrust\EdiEngine\EdiEngine\Common\Definitions\MapBaseDataElement;
 use CVTrust\EdiEngine\EdiEngine\Common\MapSegment;
 use CVTrust\EdiEngine\EdiEngine\Runtime\EdiSegment;
 use CVTrust\EdiEngine\EdiEngine\Runtime\EdiSimpleDataElement;
-namespace CVTrust\EdiEngine\EdiDataElement\DataElement;
-use Zend\Stdlib\ArrayObject;
 
 class SegmentBuilder
 {

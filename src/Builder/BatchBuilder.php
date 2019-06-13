@@ -8,8 +8,6 @@ use CVTrust\EdiEngine\EdiEngine\Common\Definitions\MapLoop;
 use CVTrust\EdiEngine\EdiEngine\EdiBatch;
 use CVTrust\EdiEngine\EdiEngine\Runtime\EdiGroup;
 use CVTrust\EdiEngine\EdiEngine\Runtime\EdiInterchange;
-use CVTrust\EdiEngine\EdiEngine\Runtime\EdiLoop;
-use CVTrust\EdiEngine\EdiEngine\Runtime\EdiTrans;
 
 class BatchBuilder
 {
