@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 
-namespace CVTrust\SutterHealthAetna\Eligibility\EdiSegment;
+namespace CVTrust\EdiEngine\Builder;
 
 use CVTrust\EdiEngine\EdiEngine\Common\Definitions\MapLoop;
 use CVTrust\EdiEngine\EdiEngine\EdiBatch;

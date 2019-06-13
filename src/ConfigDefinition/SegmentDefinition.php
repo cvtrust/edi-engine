@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace CVTrust\EdiEngine\ConfigDefinition;
 
 use CVTrust\EdiEngine\EdiEngine\Common\MapSegment;
-use CVTrust\SutterHealthAetna\Eligibility\PolicySegmentCondition\SegmentCondition;
 
 class SegmentDefinition implements DefinitionCanHaveChildren
 {

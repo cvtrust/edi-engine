@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace CVTrust\EdiEngine\ConfigDefinition\Processor;
 
+use CVTrust\EdiEngine\Builder\BuilderContext;
 use CVTrust\EdiEngine\ConfigDefinition\DataElementDefinition;
 use CVTrust\EdiEngine\ConfigDefinition\Definition;
 use CVTrust\EdiEngine\ConfigDefinition\LoopDefinition;
@@ -13,7 +14,6 @@ use CVTrust\EdiEngine\ConfigDefinition\Processor\Event\SegmentProcessed;
 use CVTrust\EdiEngine\ConfigDefinition\SectionDefinition;
 use CVTrust\EdiEngine\ConfigDefinition\SegmentDefinition;
 use CVTrust\EdiEngine\EdiDataElement\DataElement;
-use CVTrust\SutterHealthAetna\Eligibility\EdiSegment\BuilderContext;
 use Zend\EventManager\EventManagerInterface;
 
 class DefinitionProcessor
