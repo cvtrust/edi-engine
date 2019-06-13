@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace CVTrust\EdiEngine\ConfigDefinition;
 
 use CVTrust\EdiEngine\EdiEngine\Common\MapSegment;
+use CVTrust\EdiEngine\SegmentCondition\SegmentCondition;
 
 class SegmentDefinition implements DefinitionCanHaveChildren
 {
