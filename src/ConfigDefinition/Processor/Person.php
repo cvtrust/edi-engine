@@ -14,6 +14,11 @@ interface Person
     /**
      * @return bool
      */
+    public function hasMedicare(): bool;
+
+    /**
+     * @return bool
+     */
     public function hasMedicareA(): bool;
 
     /**
