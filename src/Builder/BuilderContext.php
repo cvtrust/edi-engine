@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace CVTrust\EdiEngine\Builder;
 
+use CVTrust\EdiEngine\ConfigDefinition\Definition;
+use CVTrust\EdiEngine\ConfigDefinition\LoopDefinition;
+use CVTrust\EdiEngine\ConfigDefinition\SegmentDefinition;
+use CVTrust\EdiEngine\EdiDataElement\DataElement\SegmentBuilder;
+
 class BuilderContext {
     /**
      * @var TransactionBuilder
