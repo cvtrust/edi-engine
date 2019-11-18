@@ -15,4 +15,5 @@ final class DateTimeQualifier extends Enum
 {
     public const BENEFIT_BEGIN = '348';
     public const BENEFIT_END = '349';
+    public const ELIGIBILITY_BEGIN = '356';
 }
