@@ -51,11 +51,16 @@ class LoopBuilder
     {
         $segmentDefinition = $this->loopDefinition->findContentByName($segmentName);
 
-        $builder = new SegmentBuilder($segmentDefinition);
+        $builder = new SegmentBuilder($this, $segmentDefinition);
 
-        $this->children[] = $builder;
+        $this->children[$segmentName] = $builder;
 
         return $builder;
+    }
+
+    public function getSegmentByName(string $segmentName): ?SegmentBuilder
+    {
+        return $this->children[$segmentName] ?? null;
     }
 
     public function build(): object

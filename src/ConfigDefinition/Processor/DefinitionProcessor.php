@@ -14,6 +14,8 @@ use CVTrust\EdiEngine\ConfigDefinition\Processor\Event\SegmentProcessed;
 use CVTrust\EdiEngine\ConfigDefinition\SectionDefinition;
 use CVTrust\EdiEngine\ConfigDefinition\SegmentDefinition;
 use CVTrust\EdiEngine\EdiDataElement\DataElement;
+use CVTrust\EdiEngine\EdiDataElement\MaintenanceType;
+use CVTrust\EdiEngine\SegmentCondition\SegmentCondition;
 use Zend\EventManager\EventManagerInterface;
 
 class DefinitionProcessor
@@ -77,7 +79,12 @@ class DefinitionProcessor
 
     protected function processSegment(BuilderContext $builder, SegmentDefinition $segmentDefinition, Person $person): void
     {
-        if ((null !== $condition = $segmentDefinition->SegmentCondition()) && !$condition->isValid($person)) {
+        /** @var $context SegmentCondition */
+        if ((null !== $condition = $segmentDefinition->SegmentCondition())) {
+            if (!$condition->isValid($builder, $person)) {
+                return;
+            }
+            
             return;
         }
 
@@ -95,9 +102,10 @@ class DefinitionProcessor
         $builder->changeContext($dataElementDefinition);
 
         $output = '';
+        /** @var $mapper callable */
         if (null !== $mapper = $dataElementDefinition->Mapper()) {
             /** @var DataElement $output */
-            $output = $mapper($person, $dataElementDefinition->DataElementReference());
+            $output = $mapper($builder, $person, $dataElementDefinition->DataElementReference());
         }
         elseif (null !== $dataElement = $dataElementDefinition->DataElement()) {
             /** @var DataElement $output */

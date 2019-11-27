@@ -7,6 +7,7 @@ namespace CVTrust\EdiEngine\Builder;
 use CVTrust\EdiEngine\ConfigDefinition\Definition;
 use CVTrust\EdiEngine\ConfigDefinition\LoopDefinition;
 use CVTrust\EdiEngine\ConfigDefinition\SegmentDefinition;
+use CVTrust\EdiEngine\EdiDataElement\MaintenanceType;
 
 class BuilderContext {
     /**
@@ -29,9 +30,15 @@ class BuilderContext {
      */
     private $currentSegmentBuilder;
 
-    public function __construct(TransactionBuilder $transactionBuilder)
+    /**
+     * @var MaintenanceType
+     */
+    private $maintenanceType;
+
+    public function __construct(TransactionBuilder $transactionBuilder, MaintenanceType $maintenanceType)
     {
         $this->transactionBuilder = $transactionBuilder;
+        $this->maintenanceType = $maintenanceType;
     }
 
     public function CurrentLoopBuilder(): LoopBuilder
@@ -42,6 +49,11 @@ class BuilderContext {
     public function CurrentSegmentBuilder(): SegmentBuilder
     {
         return $this->currentSegmentBuilder;
+    }
+    
+    public function maintenanceType(): MaintenanceType
+    {
+        return $this->maintenanceType;
     }
 
     public function changeContext(Definition $definition): void
