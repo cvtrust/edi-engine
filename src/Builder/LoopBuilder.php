@@ -39,7 +39,7 @@ class LoopBuilder
         try {
             $subLoop = $this->loopDefinition->findContentByName($loopName);
             $builder = new LoopBuilder($subLoop, $this->ediLoop);
-            $this->children[] = $builder;
+            $this->children[$loopName][] = $builder;
             return $builder;
         } catch (\Throwable $e) {
             var_dump('error', $this->loopDefinition->getName(), $loopName);
@@ -53,12 +53,12 @@ class LoopBuilder
 
         $builder = new SegmentBuilder($this, $segmentDefinition);
 
-        $this->children[$segmentName] = $builder;
+        $this->children[$segmentName][] = $builder;
 
         return $builder;
     }
 
-    public function getSegmentByName(string $segmentName): ?SegmentBuilder
+    public function getSegmentByName(string $segmentName): ?array
     {
         return $this->children[$segmentName] ?? null;
     }
@@ -67,8 +67,10 @@ class LoopBuilder
     {
         $loop = new EdiLoop($this->loopDefinition);
 
-        foreach ($this->children as $child) {
-            $loop->getContent()->append($child->build());
+        foreach ($this->children as $name => $items) {
+            foreach ($items as $child) {
+                $loop->getContent()->append($child->build());
+            }
         }
 
         return $loop;
