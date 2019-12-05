@@ -84,8 +84,6 @@ class DefinitionProcessor
             if (!$condition->isValid($builder, $person)) {
                 return;
             }
-            
-            return;
         }
 
         $builder->changeContext($segmentDefinition);
