@@ -22,7 +22,7 @@
   },
   "require": {
     "php": "^7.2",
-    "marc-mabe/php-enum": "^3.0",
+    "marc-mabe/php-enum": "^4.3",
     "zendframework/zend-eventmanager": "^3.2"
   },
   "require-dev": {
