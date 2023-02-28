@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  dev:
+    image: californiasvaluedtrust/php:7.4-zts-buster
+    volumes:
+      - ./:/app
+    command: tail -f /dev/null
+
+  run-test:
+    image: phpunit/phpunit
+    volumes:
+      - ./:/app
